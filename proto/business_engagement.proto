@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package test;
+
+option go_package = "hokkung.mq-demo/proto";
+
+message BusinessEngagement {
+    string bid = 1;
+    google.protobuf.Timestamp ts = 2;
+    string type = 3;
+    string action = 4;
+    int32 total = 5;
+
+}
